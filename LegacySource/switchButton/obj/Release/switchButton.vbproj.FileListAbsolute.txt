@@ -1,0 +1,11 @@
+c:\users\fabrizzio\documents\visual studio 2013\Projects\switchButton\switchButton\bin\Release\switchButton.dll
+c:\users\fabrizzio\documents\visual studio 2013\Projects\switchButton\switchButton\bin\Release\switchButton.pdb
+c:\users\fabrizzio\documents\visual studio 2013\Projects\switchButton\switchButton\bin\Release\switchButton.xml
+c:\users\fabrizzio\documents\visual studio 2013\Projects\switchButton\switchButton\obj\Release\switchButton.Resources.resources
+c:\users\fabrizzio\documents\visual studio 2013\Projects\switchButton\switchButton\obj\Release\switchButton.switch_android.resources
+c:\users\fabrizzio\documents\visual studio 2013\Projects\switchButton\switchButton\obj\Release\switchButton.switch_ios.resources
+c:\users\fabrizzio\documents\visual studio 2013\Projects\switchButton\switchButton\obj\Release\switchButton.switch_metro.resources
+c:\users\fabrizzio\documents\visual studio 2013\Projects\switchButton\switchButton\obj\Release\switchButton.vbproj.GenerateResource.Cache
+c:\users\fabrizzio\documents\visual studio 2013\Projects\switchButton\switchButton\obj\Release\switchButton.dll
+c:\users\fabrizzio\documents\visual studio 2013\Projects\switchButton\switchButton\obj\Release\switchButton.xml
+c:\users\fabrizzio\documents\visual studio 2013\Projects\switchButton\switchButton\obj\Release\switchButton.pdb

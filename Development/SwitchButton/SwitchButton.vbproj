@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{43F7A781-01B4-45AF-A4FE-A9097CE55C16}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SwitchButton</RootNamespace>
+    <AssemblyName>SwitchButton</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SwitchButton.xml</DocumentationFile>
+    <DefineConstants>_MYFORMS=True</DefineConstants>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SwitchButton.xml</DocumentationFile>
+    <DefineConstants>_MYFORMS=True</DefineConstants>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AndriodSwitchButton\AndroidSwitchButton.Designer.vb">
+      <DependentUpon>AndroidSwitchButton.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AndriodSwitchButton\AndroidSwitchButton.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AppleSwitchButton\AppleSwitchButton.Designer.vb">
+      <DependentUpon>AppleSwitchButton.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AppleSwitchButton\AppleSwitchButton.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="WindowsSwitchButton\Resources\Resx Files\Windows_Black.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Windows_Black.resx</DependentUpon>
+    </Compile>
+    <Compile Include="WindowsSwitchButton\Resources\Resx Files\Windows_Blue.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Windows_Blue.resx</DependentUpon>
+    </Compile>
+    <Compile Include="WindowsSwitchButton\Resources\Resx Files\Windows_Green.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Windows_Green.resx</DependentUpon>
+    </Compile>
+    <Compile Include="WindowsSwitchButton\Resources\Resx Files\Windows_Orange.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Windows_Orange.resx</DependentUpon>
+    </Compile>
+    <Compile Include="WindowsSwitchButton\Resources\Resx Files\Windows_Pink.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Windows_Pink.resx</DependentUpon>
+    </Compile>
+    <Compile Include="WindowsSwitchButton\Resources\Resx Files\Windows_Purple.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Windows_Purple.resx</DependentUpon>
+    </Compile>
+    <Compile Include="WindowsSwitchButton\Resources\Resx Files\Windows_Red.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Windows_Red.resx</DependentUpon>
+    </Compile>
+    <Compile Include="WindowsSwitchButton\Resources\Resx Files\Windows_Teal.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Windows_Teal.resx</DependentUpon>
+    </Compile>
+    <Compile Include="WindowsSwitchButton\Resources\Resx Files\Windows_Yellow.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Windows_Yellow.resx</DependentUpon>
+    </Compile>
+    <Compile Include="WindowsSwitchButton\WindowsSwitchButton.Designer.vb">
+      <DependentUpon>WindowsSwitchButton.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WindowsSwitchButton\WindowsSwitchButton.vb">
+      <SubType>usercontrol</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AndriodSwitchButton\AndroidSwitchButton.resx">
+      <DependentUpon>AndroidSwitchButton.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppleSwitchButton\AppleSwitchButton.resx">
+      <DependentUpon>AppleSwitchButton.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowsSwitchButton\Resources\Resx Files\Windows_Black.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <LastGenOutput>Windows_Black.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowsSwitchButton\Resources\Resx Files\Windows_Blue.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <LastGenOutput>Windows_Blue.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowsSwitchButton\Resources\Resx Files\Windows_Green.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <LastGenOutput>Windows_Green.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowsSwitchButton\Resources\Resx Files\Windows_Orange.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <LastGenOutput>Windows_Orange.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowsSwitchButton\Resources\Resx Files\Windows_Pink.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <LastGenOutput>Windows_Pink.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowsSwitchButton\Resources\Resx Files\Windows_Purple.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <LastGenOutput>Windows_Purple.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowsSwitchButton\Resources\Resx Files\Windows_Red.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <LastGenOutput>Windows_Red.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowsSwitchButton\Resources\Resx Files\Windows_Teal.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <LastGenOutput>Windows_Teal.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowsSwitchButton\Resources\Resx Files\Windows_Yellow.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <LastGenOutput>Windows_Yellow.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowsSwitchButton\WindowsSwitchButton.resx">
+      <DependentUpon>WindowsSwitchButton.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AndriodSwitchButton\Resources\Resx Files\" />
+    <Folder Include="AppleSwitchButton\Resources\Resx Files\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AndriodSwitchButton\Resources\Images\AndroidSwitchButton_Frame1.png" />
+    <Content Include="AndriodSwitchButton\Resources\Images\AndroidSwitchButton_Frame2.png" />
+    <Content Include="AndriodSwitchButton\Resources\Images\AndroidSwitchButton_Frame3.png" />
+    <Content Include="AndriodSwitchButton\Resources\Images\AndroidSwitchButton_Frame4.png" />
+    <Content Include="AppleSwitchButton\Resources\Images\AppleSwitchButton_Frame1.png" />
+    <Content Include="AppleSwitchButton\Resources\Images\AppleSwitchButton_Frame2.png" />
+    <Content Include="AppleSwitchButton\Resources\Images\AppleSwitchButton_Frame3.png" />
+    <Content Include="AppleSwitchButton\Resources\Images\AppleSwitchButton_Frame4.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Yellow\Frame_10.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Yellow\Frame_9.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Yellow\Frame_8.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Yellow\Frame_7.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Yellow\Frame_6.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Yellow\Frame_5.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Yellow\Frame_4.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Yellow\Frame_3.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Yellow\Frame_2.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Yellow\Frame_1.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Purple\Frame_10.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Purple\Frame_9.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Purple\Frame_8.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Purple\Frame_7.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Purple\Frame_6.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Purple\Frame_5.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Purple\Frame_4.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Purple\Frame_3.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Purple\Frame_2.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Purple\Frame_1.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Pink\Frame_10.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Pink\Frame_9.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Pink\Frame_8.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Pink\Frame_7.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Pink\Frame_6.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Pink\Frame_5.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Pink\Frame_4.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Pink\Frame_3.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Pink\Frame_2.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Pink\Frame_1.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Orange\Frame_10.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Orange\Frame_9.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Orange\Frame_8.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Orange\Frame_7.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Orange\Frame_6.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Orange\Frame_5.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Orange\Frame_4.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Orange\Frame_3.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Orange\Frame_2.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Orange\Frame_1.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Blue\Frame_10.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Blue\Frame_9.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Blue\Frame_8.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Blue\Frame_7.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Blue\Frame_6.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Blue\Frame_5.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Blue\Frame_4.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Blue\Frame_3.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Blue\Frame_2.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Blue\Frame_1.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Green\Frame_10.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Green\Frame_9.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Green\Frame_8.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Green\Frame_7.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Green\Frame_6.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Green\Frame_5.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Green\Frame_4.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Green\Frame_3.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Green\Frame_2.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Green\Frame_1.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Black\Frame_10.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Black\Frame_9.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Black\Frame_8.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Black\Frame_7.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Black\Frame_6.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Black\Frame_5.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Black\Frame_4.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Black\Frame_3.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Black\Frame_2.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Black\Frame_1.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Red\Frame_10.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Red\Frame_9.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Red\Frame_8.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Red\Frame_7.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Red\Frame_6.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Red\Frame_5.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Red\Frame_4.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Red\Frame_3.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Red\Frame_2.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Red\Frame_1.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Teal\Frame_10.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Teal\Frame_9.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Teal\Frame_8.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Teal\Frame_7.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Teal\Frame_6.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Teal\Frame_5.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Teal\Frame_4.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Teal\Frame_3.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Teal\Frame_2.png" />
+    <None Include="WindowsSwitchButton\Resources\Images\Windows\Teal\Frame_1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
